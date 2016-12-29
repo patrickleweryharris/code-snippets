@@ -5,7 +5,7 @@
 
 > Little projects and random code
 
-Projects that I've made that are too small for their own repo
+Projects & Scripts that I've made that are too small for their own repo. Includes some assignments from CSC108 fall 2015.
 
 ## Table of Contents
 - [Usage](#usage)
