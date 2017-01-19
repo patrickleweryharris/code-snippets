@@ -1,11 +1,5 @@
 #!/bin/bash
 
-## Tool from AstroFloyd that I use to check to see if git repos have been pushed
-## gitcheck:
-##   Check all git repositories in subdirectories, and list the ones with changes
-##   30/07/2011, AstroFloyd, bzrcheck
-##   18/01/2013, Astrofloyd, gitcheck
-
 # Initialise counters:
 let count_all=0
 let count_changed=0
@@ -25,8 +19,7 @@ do
 
     # If there are changes, print some status and branch info of this repo:
     git status -s | grep -v '??' &> /dev/null && {
-	echo -e "\n\n \E[1;31m ${dir}\E[0m"
-	git branch -vvra
+	echo -e "\n\n ${dir}"
 	git status -s | grep -v '??'
 	let count_changed=${count_changed}+1
     }
