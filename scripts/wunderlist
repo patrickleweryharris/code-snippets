@@ -1,5 +1,0 @@
-#!/bin/bash
-
-echo "Your Tasks:"
-
-wunderline all
